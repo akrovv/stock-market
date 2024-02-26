@@ -7,6 +7,6 @@ func NewStatService() *service {
 	return &service{}
 }
 
-func (s *service) Statistic(StatisticlData) <-chan OHLCVData {
+func (s *service) Statistic(dto *StatisticlData) (<-chan OHLCVData, error) {
 	panic("not implemented")
 }
